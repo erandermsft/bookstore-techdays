@@ -28,7 +28,7 @@ jobs:
           application_private_key: ${{ secrets.OCTODEMOBOT_APPLICATION_KEY_REPO_AUTOMATION }}
 
       - name: Parse and Respond to Command
-        uses: actions/github-script@v4
+        uses: actions/github-script@v4.1
         with:
           github-token: ${{ steps.temp_token.outputs.token }}
           script: |
